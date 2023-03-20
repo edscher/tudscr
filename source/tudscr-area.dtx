@@ -467,6 +467,9 @@
     \tud@setdim\@tempdima{\@tempa\@tempdima}%
     \edef\tud@head@fontsize{\strip@pt\@tempdima}%
   \fi%
+
+\tud@setdim\tud@dim@heavyline{0pt}%
+\tud@setdim\tud@dim@thinline{0pt}%
 %    \end{macrocode}
 % Zum Schluss werden die restlichen Längen aus der Referenzlänge berechnet und 
 % das Erstellen der Kopfzeile aufgrund der möglichen Änderung der Schriftgröße
@@ -475,13 +478,13 @@
   \global\@tud@head@font@settrue%
   \tud@setdim\tud@dim@slimmargin{\tud@dim@widemargin*2/3}%
   \tud@setdim\tud@dim@bothmargin{\tud@dim@widemargin*5/3}%
-  \tud@setdim\tud@dim@topmargin{\tud@dim@widemargin*7/6}%
-  \tud@setdim\tud@dim@barheight{\tud@dim@widemargin/6}%
-  \tud@setdim\tud@dim@headsep{\tud@dim@widemargin*2/5}%
+  \tud@setdim\tud@dim@topmargin{\tud@dim@widemargin*8/6}%
+  %\tud@setdim\tud@dim@barheight{\tud@dim@widemargin/6}%
+  \tud@setdim\tud@dim@headsep{\tud@dim@widemargin*1/5}% 
   \tud@setdim\tud@dim@logox{\tud@dim@widemargin*11/30}%
   \tud@setdim\tud@dim@logoy{\tud@dim@widemargin*9/20}%
   \tud@setdim\tud@dim@logowidth{\tud@dim@widemargin*19/10}%
-  \tud@setdim\tud@dim@footsep{\tud@dim@widemargin-\tud@dim@topmargin*3/5}%
+  \tud@setdim\tud@dim@footsep{\tud@dim@widemargin-\tud@dim@topmargin*7/10}% since (7/6) * (3/5) = 21/30 = 7/10
 %    \end{macrocode}
 % Wird die Gestaltungshöhe DIN~A5 im Raster verwendet, werden die Abstände 
 % zwischen Kopf- unf Fußzeile angepasst.

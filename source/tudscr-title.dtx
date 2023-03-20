@@ -819,6 +819,11 @@
     \ifx\@subtitle\@empty\else%
       {\usekomafont{subtitle}{\tud@title@format[partnumber]{\@subtitle}\par}}%
     \fi%
+%<*poster>  
+	%\vskip\bigskipamount%
+    \let\tud@split@author@do\tud@split@author@title%
+    \tud@multiple@split{@author}\par%    
+%</poster>    
     \vskip 2ex\@plus1ex\@minus1ex%
 %    \end{macrocode}
 % Ausgabe eines Autors oder mehrerer Autoren ggf. mit Zusatzinformationen.
